@@ -1,0 +1,15 @@
+Financial Report
+----------------
+
+Summary: Tickets sold: 3 Total Tickets: 121
+         Ticket revenue: £13.5
+
+Welsh Wonderland    Tickets sold: 3 Total tickets: 48
+                   Tour revenue: £13.5
+
+Secret Snowdon    Tickets sold: 0 Total tickets: 25
+                   Tour revenue: £0
+
+Stunning St.David's    Tickets sold: 0 Total tickets: 48
+                   Tour revenue: £0
+

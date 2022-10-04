@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tile Matching Game</string>
+    <string name="puzzle_select_msg">Select puzzle below</string>
+    <string name="puzzle">Select puzzle</string>
+    <string name="score">Score:</string>
+    <string name="highscore"> Highscore:</string>
+    <string name="win_highscore">Congratulations you win and a new highscore</string>
+    <string name="win">Congratulations you win</string>
+</resources>

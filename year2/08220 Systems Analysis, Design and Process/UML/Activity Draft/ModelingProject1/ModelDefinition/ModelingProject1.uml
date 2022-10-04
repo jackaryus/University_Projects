@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="55cd6f86-5d04-46d2-beaf-473880b2ab31"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="5705f3b9-04c3-4360-a971-56407b88a87e">
+      <body>Agent</body>
+    </comment>
+    <comment
+      Id="41750ebe-7b67-4a39-8f94-f2284e240fe8">
+      <body>Customer</body>
+    </comment>
+    <comment
+      Id="c3d2ab5a-766a-4a9d-8a20-e71179109e87">
+      <body>Coach Driver</body>
+    </comment>
+    <comment
+      Id="419aa09d-6735-4f4b-8a2c-a839fbdd4c09">
+      <body>Manager</body>
+    </comment>
+    <comment
+      Id="50b35a6a-2608-4802-b280-84e0ef92460d">
+      <body>Secretary</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="73d6c71e-0795-494e-abf4-763b17c42305"
+        name="ActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c56e3275-b879-4b48-876b-a05f50e0a4df"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a011185f-e449-4e57-8794-31a131b923c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c1455241-e112-4918-8f08-57d8029a8d1f"
+                  LastKnownName="Create Tour"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="64cf43fc-2651-4922-ae3f-be9e31b041ae"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="49a92620-b34f-46d8-be68-a7d42110d98c"
+                  LastKnownName="Customer  Applies for tickets"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="c1455241-e112-4918-8f08-57d8029a8d1f"
+            name="Create Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e8374afb-bcdd-4ae6-b1ea-05d577d55207"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2dc6ab25-fe18-427d-b31d-93468d888780"
+                  LastKnownName="Detail Tour"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2dc6ab25-fe18-427d-b31d-93468d888780"
+            name="Detail Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b1c3ee40-fa32-4d3c-aabe-5e3ed8245874"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="60d9bffc-88cf-493a-ab7f-1ad84b4437a8"
+                  LastKnownName="Check Available coachs"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="827d3392-0dc8-4079-996b-3580f770db85"
+            name="Put Tour on Sale"
+            isLeaf="false" />
+          <opaqueAction
+            Id="49a92620-b34f-46d8-be68-a7d42110d98c"
+            name="Customer  Applies for tickets"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67577740-5bd6-4dd4-93fa-f9a78f3376cd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bfb4fcaa-d213-4ae5-a03d-81b8af7ee9d5"
+                  LastKnownName="Check Availability"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bfb4fcaa-d213-4ae5-a03d-81b8af7ee9d5"
+            name="Check Availability"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c59a489f-7c80-4d3f-a1f2-5e0e0430011e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4593b23e-76e9-4ccd-8120-3bdc3dc048dd"
+                  LastKnownName="Check Membership"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4593b23e-76e9-4ccd-8120-3bdc3dc048dd"
+            name="Check Membership"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="be0a88ad-0f49-46d8-827f-efc5cf55c7eb"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e8afe68c-7620-4096-9d49-851437b4dde6"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e4504c45-8143-4818-a378-f01a15c747a4"
+            name="Book Ticket"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d8cc32a5-07a0-4d60-a104-ca4522da7774"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5604af51-70f9-4b63-9476-f0f0b8836e9b"
+                  LastKnownName="Send details to Driver"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5604af51-70f9-4b63-9476-f0f0b8836e9b"
+            name="Send details to Driver"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0255829a-b676-479c-84a7-294af6ed53f7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c5feabc9-8363-4e8d-8ab0-f5925e78bba3"
+                  LastKnownName="Check How many Customers there are"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c5feabc9-8363-4e8d-8ab0-f5925e78bba3"
+            name="Check How many Customers there are"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cc8faba5-1534-4611-be15-97f8e007c03e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="32b9ffbf-6f7e-402b-8f4e-52e6fd0e1ab3"
+                  LastKnownName="Check Route"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="32b9ffbf-6f7e-402b-8f4e-52e6fd0e1ab3"
+            name="Check Route"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1affa447-d269-4637-b417-a74f1a8f2edd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f5b6ee88-ee78-432d-a6f8-98c7cc0be934"
+                  LastKnownName="Drive Tour"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f5b6ee88-ee78-432d-a6f8-98c7cc0be934"
+            name="Drive Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="33b9914d-4ac1-4d73-87db-3d61b8151edd"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b2604a8b-cabb-4411-8b4e-f1f304b78746"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="60d9bffc-88cf-493a-ab7f-1ad84b4437a8"
+            name="Check Available coachs"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="12f7e845-0c0c-42e6-a165-bb4ca69d6b05"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="40a2115e-427d-4a18-8af1-16da4f013d57"
+                  LastKnownName="Check available Driver"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="34b52819-b5ce-4c6b-91df-914062221431"
+            name="Hire More Drivers"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ce01e1be-c1e4-492c-8645-b973bcd0f3f1"
+            name="Buy More Coaches"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="b2604a8b-cabb-4411-8b4e-f1f304b78746"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="40a2115e-427d-4a18-8af1-16da4f013d57"
+            name="Check available Driver"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="085855d7-8a0c-474b-a594-76b717625ed9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f01a5d9f-25c0-4d70-b15f-611e648e4cfc"
+                  LastKnownName="Edit Tour"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="0d7fee05-1bbd-447c-aa1a-1a10336747bd"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7c4cba3c-7122-4801-baf5-5c1ad52dc124"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="34b52819-b5ce-4c6b-91df-914062221431"
+                  LastKnownName="Hire More Drivers"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d1c4e52d-86e5-4c2d-a809-77162b7a60c6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="827d3392-0dc8-4079-996b-3580f770db85"
+                  LastKnownName="Put Tour on Sale"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fe6c42aa-e9c1-4f57-8570-a6a197bc7560"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce01e1be-c1e4-492c-8645-b973bcd0f3f1"
+                  LastKnownName="Buy More Coaches"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="18de11b0-2458-46dc-8472-d200c2f42996"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff46e8d4-7357-48fe-843e-0ecaed4d363a"
+                  LastKnownName="Delete Tour"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="e8afe68c-7620-4096-9d49-851437b4dde6"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a6698b0-997f-4ec1-9dda-ba3b925f0dcc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="105d55a9-8a6f-4443-92cd-c2f0a54ae681"
+                  LastKnownName="Apply Discount"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="20ef889c-c27d-429c-8a13-d42624e9643c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e83400ae-cf01-454b-8d16-a834dc464dcf"
+                  LastKnownName="Apply For Membership"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a5ed056c-7aa5-4846-8e3a-998f4b0b7626"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3db1df47-ff32-4155-a920-6c73bf4dfe6c"
+                  LastKnownName="Make Payment"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="105d55a9-8a6f-4443-92cd-c2f0a54ae681"
+            name="Apply Discount"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4fc32710-9aae-4943-bcd5-4dcecf99a71a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3db1df47-ff32-4155-a920-6c73bf4dfe6c"
+                  LastKnownName="Make Payment"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ff46e8d4-7357-48fe-843e-0ecaed4d363a"
+            name="Delete Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1a4e14f9-6711-46a0-9eb1-a15f14806801"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c0c9a172-c1a6-45a8-ba12-b27621281f04"
+                  LastKnownName="Make Refund"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f01a5d9f-25c0-4d70-b15f-611e648e4cfc"
+            name="Edit Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="198e953c-7c82-4eeb-9d5a-93fbe83a6889"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="0d7fee05-1bbd-447c-aa1a-1a10336747bd"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e83400ae-cf01-454b-8d16-a834dc464dcf"
+            name="Apply For Membership"
+            isLeaf="false" />
+          <opaqueAction
+            Id="3db1df47-ff32-4155-a920-6c73bf4dfe6c"
+            name="Make Payment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="062eb6ee-666c-4339-905d-78a6cf71c179"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e4504c45-8143-4818-a378-f01a15c747a4"
+                  LastKnownName="Book Ticket"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c0c9a172-c1a6-45a8-ba12-b27621281f04"
+            name="Make Refund"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6871046a-e8d8-4a74-a7bb-cdcbe9b03b08"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b2604a8b-cabb-4411-8b4e-f1f304b78746"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b08a9025-ba3e-405b-99c3-ff42fb5c9488"
+            name="Write Newsletter"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="88978df4-5b2a-4cec-9dd2-a9998edf581a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="718296cb-3ed8-45c2-bdc3-764b5d25d696"
+                  LastKnownName="Send Newsletter"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="718296cb-3ed8-45c2-bdc3-764b5d25d696"
+            name="Send Newsletter"
+            isLeaf="false" />
+          <opaqueAction
+            Id="3fb8a350-0a48-4fbd-a067-ba6c28723a71"
+            name="Send Membership Reminders"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

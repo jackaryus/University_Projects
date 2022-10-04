@@ -1,0 +1,6 @@
+fileName=E:\advanced\acw\WordSearch\AdvancedDictionary.cpp
+isCpp=
+compilerOpts=-I"C:\Program Files (x86)\Parasoft\C++test for Visual Studio\9.5\engine\runtime\include" /Zi /W3 /O2 /EHsc /MD /fp:precise /Gd /GS /sdl /Oi /Oy- /Gm- /Gy /DWIN32 /DNDEBUG /D_CONSOLE /D_LIB /D_UNICODE /DUNICODE /Zc:wchar_t /Zc:forScope /WX- /nologo -DPARASOFT_CPPTEST -I.
+compilerId=vc_12_0
+workingDir=E:\advanced\acw\WordSearch\
+advancedOptionsHash=0

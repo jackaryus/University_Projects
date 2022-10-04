@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ea5eaa0f-f9fc-430c-a463-20f2bdc17169" name="ActivityDiagram" linkedPackageId="c6c47fab-7836-4a45-99d1-a98d1dfd0836" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6bf121a3-4041-4fd2-9366-c617e1317a06">
+      <elementDefinition Id="5705f3b9-04c3-4360-a971-56407b88a87e" />
+      <body>Agent</body>
+    </comment>
+    <comment Id="c1b42d86-87c4-4818-a062-b2a77648a74c">
+      <elementDefinition Id="41750ebe-7b67-4a39-8f94-f2284e240fe8" />
+      <body>Customer</body>
+    </comment>
+    <comment Id="2d7b0fe0-cf6e-44ec-be62-c9f57244d3ef">
+      <elementDefinition Id="c3d2ab5a-766a-4a9d-8a20-e71179109e87" />
+      <body>Coach Driver</body>
+    </comment>
+    <comment Id="7c2e2640-7bd3-45b7-9c8a-869a35280487">
+      <elementDefinition Id="419aa09d-6735-4f4b-8a2c-a839fbdd4c09" />
+      <body>Manager</body>
+    </comment>
+    <comment Id="0e50cc32-a966-406b-ba59-11b3655828e1">
+      <elementDefinition Id="50b35a6a-2608-4802-b280-84e0ef92460d" />
+      <body>Secretary</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="4ed6e94a-6a0a-40b4-a72e-3cca2daa04fe" name="ActivityDiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="73d6c71e-0795-494e-abf4-763b17c42305" />
+        <nodes>
+          <initialNode Id="049d4625-bbbe-4cc0-a07d-e69f42f6de86" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c56e3275-b879-4b48-876b-a05f50e0a4df" />
+            <flowNodeTargets>
+              <controlFlow Id="8cb4e42f-07de-4c1c-85f8-d63574a1ad89" isLeaf="false">
+                <opaqueActionMoniker Id="055fba50-e424-4694-8465-bec09197ebfd" LastKnownName="Create Tour" />
+                <elementDefinition Id="a011185f-e449-4e57-8794-31a131b923c2" />
+              </controlFlow>
+              <controlFlow Id="3fd24d68-bcc3-419a-b85b-b62be1ca60ee" isLeaf="false">
+                <opaqueActionMoniker Id="d78c6a56-f9a4-42f9-9774-9b6744cb9673" LastKnownName="Customer  Applies for tickets" />
+                <elementDefinition Id="64cf43fc-2651-4922-ae3f-be9e31b041ae" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="055fba50-e424-4694-8465-bec09197ebfd" name="Create Tour" isLeaf="false">
+            <elementDefinition Id="c1455241-e112-4918-8f08-57d8029a8d1f" />
+            <flowNodeTargets>
+              <controlFlow Id="566b39a7-98e5-470e-a40a-0db5c4667e9f" isLeaf="false">
+                <opaqueActionMoniker Id="83964135-e5d9-46de-834c-36a3d1fa995a" LastKnownName="Detail Tour" />
+                <elementDefinition Id="e8374afb-bcdd-4ae6-b1ea-05d577d55207" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="83964135-e5d9-46de-834c-36a3d1fa995a" name="Detail Tour" isLeaf="false">
+            <elementDefinition Id="2dc6ab25-fe18-427d-b31d-93468d888780" />
+            <flowNodeTargets>
+              <controlFlow Id="fe1d943b-61de-4c09-a179-83f8354e4ff0" isLeaf="false">
+                <opaqueActionMoniker Id="eaf95244-b659-4bd6-b4ff-9f5682cb4a8e" LastKnownName="Check Available coachs" />
+                <elementDefinition Id="b1c3ee40-fa32-4d3c-aabe-5e3ed8245874" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="591ca6ac-14c3-470d-b42b-c9ec41763047" name="Put Tour on Sale" isLeaf="false">
+            <elementDefinition Id="827d3392-0dc8-4079-996b-3580f770db85" />
+          </opaqueAction>
+          <opaqueAction Id="d78c6a56-f9a4-42f9-9774-9b6744cb9673" name="Customer  Applies for tickets" isLeaf="false">
+            <elementDefinition Id="49a92620-b34f-46d8-be68-a7d42110d98c" />
+            <flowNodeTargets>
+              <controlFlow Id="5df1bcfd-ca60-445d-a4f4-7d1d356f00d2" isLeaf="false">
+                <opaqueActionMoniker Id="9991bca5-3c02-4c8e-954a-81d1ef7c37b1" LastKnownName="Check Availability" />
+                <elementDefinition Id="67577740-5bd6-4dd4-93fa-f9a78f3376cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9991bca5-3c02-4c8e-954a-81d1ef7c37b1" name="Check Availability" isLeaf="false">
+            <elementDefinition Id="bfb4fcaa-d213-4ae5-a03d-81b8af7ee9d5" />
+            <flowNodeTargets>
+              <controlFlow Id="2b8fb25d-709d-4174-ad19-e799db7f463d" isLeaf="false">
+                <opaqueActionMoniker Id="d086a3d2-af59-4222-8a37-c76a93bb06fc" LastKnownName="Check Membership" />
+                <elementDefinition Id="c59a489f-7c80-4d3f-a1f2-5e0e0430011e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d086a3d2-af59-4222-8a37-c76a93bb06fc" name="Check Membership" isLeaf="false">
+            <elementDefinition Id="4593b23e-76e9-4ccd-8120-3bdc3dc048dd" />
+            <flowNodeTargets>
+              <controlFlow Id="9d53fb81-48bc-4aad-aea9-6362c4a60197" isLeaf="false">
+                <decisionNodeMoniker Id="77fdc0f5-eb2c-4094-9c44-18e22f78d37e" LastKnownName="Decision4" />
+                <elementDefinition Id="be0a88ad-0f49-46d8-827f-efc5cf55c7eb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="32ea5535-bb48-4931-a6f6-f1fc39a6311b" name="Book Ticket" isLeaf="false">
+            <elementDefinition Id="e4504c45-8143-4818-a378-f01a15c747a4" />
+            <flowNodeTargets>
+              <controlFlow Id="1b7c739d-7d29-4acd-8f7f-0d87218258d7" isLeaf="false">
+                <opaqueActionMoniker Id="ead799f1-8c06-4a53-8978-1b6fedec4dd6" LastKnownName="Send details to Driver" />
+                <elementDefinition Id="d8cc32a5-07a0-4d60-a104-ca4522da7774" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ead799f1-8c06-4a53-8978-1b6fedec4dd6" name="Send details to Driver" isLeaf="false">
+            <elementDefinition Id="5604af51-70f9-4b63-9476-f0f0b8836e9b" />
+            <flowNodeTargets>
+              <controlFlow Id="398b23af-93dd-4ad4-9ec9-7852eea083e4" isLeaf="false">
+                <opaqueActionMoniker Id="e13fd8ec-8afa-4789-9113-19f628b8b25e" LastKnownName="Check How many Customers there are" />
+                <elementDefinition Id="0255829a-b676-479c-84a7-294af6ed53f7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e13fd8ec-8afa-4789-9113-19f628b8b25e" name="Check How many Customers there are" isLeaf="false">
+            <elementDefinition Id="c5feabc9-8363-4e8d-8ab0-f5925e78bba3" />
+            <flowNodeTargets>
+              <controlFlow Id="345aebc9-5867-444c-826c-ffc2fa891953" isLeaf="false">
+                <opaqueActionMoniker Id="10f778b6-5318-4f14-8180-ff07fa907898" LastKnownName="Check Route" />
+                <elementDefinition Id="cc8faba5-1534-4611-be15-97f8e007c03e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="10f778b6-5318-4f14-8180-ff07fa907898" name="Check Route" isLeaf="false">
+            <elementDefinition Id="32b9ffbf-6f7e-402b-8f4e-52e6fd0e1ab3" />
+            <flowNodeTargets>
+              <controlFlow Id="a9534bb2-565c-4a68-b66c-c9f50733da49" isLeaf="false">
+                <opaqueActionMoniker Id="d69566e9-b2d4-4a13-bf24-25befb5aea20" LastKnownName="Drive Tour" />
+                <elementDefinition Id="1affa447-d269-4637-b417-a74f1a8f2edd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d69566e9-b2d4-4a13-bf24-25befb5aea20" name="Drive Tour" isLeaf="false">
+            <elementDefinition Id="f5b6ee88-ee78-432d-a6f8-98c7cc0be934" />
+            <flowNodeTargets>
+              <controlFlow Id="3f6ddb25-d2cd-4906-a79e-562c0072215d" isLeaf="false">
+                <activityFinalNodeMoniker Id="35565e7e-b2b5-4e13-89f0-b410c5af1613" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="33b9914d-4ac1-4d73-87db-3d61b8151edd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eaf95244-b659-4bd6-b4ff-9f5682cb4a8e" name="Check Available coachs" isLeaf="false">
+            <elementDefinition Id="60d9bffc-88cf-493a-ab7f-1ad84b4437a8" />
+            <flowNodeTargets>
+              <controlFlow Id="0c5a18aa-59f2-4905-9a20-c2f6cb955343" isLeaf="false">
+                <opaqueActionMoniker Id="30db5309-72f7-4dbc-963a-4cd16079f49a" LastKnownName="Check available Driver" />
+                <elementDefinition Id="12f7e845-0c0c-42e6-a165-bb4ca69d6b05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8d788e1c-9240-4a3c-a8c4-a1863c5fa90e" name="Hire More Drivers" isLeaf="false">
+            <elementDefinition Id="34b52819-b5ce-4c6b-91df-914062221431" />
+          </opaqueAction>
+          <opaqueAction Id="64a0c96b-ee3d-47a8-87b7-60fe06388323" name="Buy More Coaches" isLeaf="false">
+            <elementDefinition Id="ce01e1be-c1e4-492c-8645-b973bcd0f3f1" />
+          </opaqueAction>
+          <activityFinalNode Id="35565e7e-b2b5-4e13-89f0-b410c5af1613" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="b2604a8b-cabb-4411-8b4e-f1f304b78746" />
+          </activityFinalNode>
+          <opaqueAction Id="30db5309-72f7-4dbc-963a-4cd16079f49a" name="Check available Driver" isLeaf="false">
+            <elementDefinition Id="40a2115e-427d-4a18-8af1-16da4f013d57" />
+            <flowNodeTargets>
+              <controlFlow Id="03640ab5-a7b5-4e4d-aa22-980f2650d399" isLeaf="false">
+                <opaqueActionMoniker Id="4c4f605f-df8f-4d86-b515-7154e5ccb772" LastKnownName="Edit Tour" />
+                <elementDefinition Id="085855d7-8a0c-474b-a594-76b717625ed9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ef429c3a-b95d-4baf-8630-83d3c4f48517" name="Decision2" isLeaf="false">
+            <elementDefinition Id="0d7fee05-1bbd-447c-aa1a-1a10336747bd" />
+            <flowNodeTargets>
+              <controlFlow Id="f873b916-d92c-46ce-873a-f5f6d6ff3f4e" isLeaf="false">
+                <opaqueActionMoniker Id="8d788e1c-9240-4a3c-a8c4-a1863c5fa90e" LastKnownName="Hire More Drivers" />
+                <elementDefinition Id="7c4cba3c-7122-4801-baf5-5c1ad52dc124" />
+              </controlFlow>
+              <controlFlow Id="e461de06-53ef-4609-abe1-daf6d8500e17" isLeaf="false">
+                <opaqueActionMoniker Id="591ca6ac-14c3-470d-b42b-c9ec41763047" LastKnownName="Put Tour on Sale" />
+                <elementDefinition Id="d1c4e52d-86e5-4c2d-a809-77162b7a60c6" />
+              </controlFlow>
+              <controlFlow Id="295a92d6-b7cc-4e52-be2d-79e6ffc0eac0" isLeaf="false">
+                <opaqueActionMoniker Id="64a0c96b-ee3d-47a8-87b7-60fe06388323" LastKnownName="Buy More Coaches" />
+                <elementDefinition Id="fe6c42aa-e9c1-4f57-8570-a6a197bc7560" />
+              </controlFlow>
+              <controlFlow Id="a6f9c116-4481-4760-a2e0-5913a61114b5" isLeaf="false">
+                <opaqueActionMoniker Id="663ee4cc-0e76-4fa6-9b62-6cbea9a7420c" LastKnownName="Delete Tour" />
+                <elementDefinition Id="18de11b0-2458-46dc-8472-d200c2f42996" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="77fdc0f5-eb2c-4094-9c44-18e22f78d37e" name="Decision4" isLeaf="false">
+            <elementDefinition Id="e8afe68c-7620-4096-9d49-851437b4dde6" />
+            <flowNodeTargets>
+              <controlFlow Id="2de86584-a940-4bd9-880b-8bb13353a347" isLeaf="false">
+                <opaqueActionMoniker Id="5496604c-ae23-4162-a1da-f3ea5e23ebcf" LastKnownName="Apply Discount" />
+                <elementDefinition Id="6a6698b0-997f-4ec1-9dda-ba3b925f0dcc" />
+              </controlFlow>
+              <controlFlow Id="db131454-cc45-4858-9974-fd709aaf12f8" isLeaf="false">
+                <opaqueActionMoniker Id="b3d4ee4c-8d09-4943-9d77-b7c00299afd6" LastKnownName="Apply For Membership" />
+                <elementDefinition Id="20ef889c-c27d-429c-8a13-d42624e9643c" />
+              </controlFlow>
+              <controlFlow Id="2b05db1c-f045-41f9-9821-69d7242f4166" isLeaf="false">
+                <opaqueActionMoniker Id="b8567f14-2baa-4177-bd10-91758cd80afe" LastKnownName="Make Payment" />
+                <elementDefinition Id="a5ed056c-7aa5-4846-8e3a-998f4b0b7626" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5496604c-ae23-4162-a1da-f3ea5e23ebcf" name="Apply Discount" isLeaf="false">
+            <elementDefinition Id="105d55a9-8a6f-4443-92cd-c2f0a54ae681" />
+            <flowNodeTargets>
+              <controlFlow Id="bf619d7b-d68a-43b0-8c2e-c5e7539e8860" isLeaf="false">
+                <opaqueActionMoniker Id="b8567f14-2baa-4177-bd10-91758cd80afe" LastKnownName="Make Payment" />
+                <elementDefinition Id="4fc32710-9aae-4943-bcd5-4dcecf99a71a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="663ee4cc-0e76-4fa6-9b62-6cbea9a7420c" name="Delete Tour" isLeaf="false">
+            <elementDefinition Id="ff46e8d4-7357-48fe-843e-0ecaed4d363a" />
+            <flowNodeTargets>
+              <controlFlow Id="e8b62cf8-39bf-4115-905f-f8ef900bcd63" isLeaf="false">
+                <opaqueActionMoniker Id="cae85074-bac1-4e73-827d-ef8cd25eaa95" LastKnownName="Make Refund" />
+                <elementDefinition Id="1a4e14f9-6711-46a0-9eb1-a15f14806801" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4c4f605f-df8f-4d86-b515-7154e5ccb772" name="Edit Tour" isLeaf="false">
+            <elementDefinition Id="f01a5d9f-25c0-4d70-b15f-611e648e4cfc" />
+            <flowNodeTargets>
+              <controlFlow Id="2daa3f99-4329-43eb-85cc-3cb5e8efb37d" isLeaf="false">
+                <decisionNodeMoniker Id="ef429c3a-b95d-4baf-8630-83d3c4f48517" LastKnownName="Decision2" />
+                <elementDefinition Id="198e953c-7c82-4eeb-9d5a-93fbe83a6889" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b3d4ee4c-8d09-4943-9d77-b7c00299afd6" name="Apply For Membership" isLeaf="false">
+            <elementDefinition Id="e83400ae-cf01-454b-8d16-a834dc464dcf" />
+          </opaqueAction>
+          <opaqueAction Id="b8567f14-2baa-4177-bd10-91758cd80afe" name="Make Payment" isLeaf="false">
+            <elementDefinition Id="3db1df47-ff32-4155-a920-6c73bf4dfe6c" />
+            <flowNodeTargets>
+              <controlFlow Id="c4efcc6d-1a6a-42d8-b2d3-62a7043fcea8" isLeaf="false">
+                <opaqueActionMoniker Id="32ea5535-bb48-4931-a6f6-f1fc39a6311b" LastKnownName="Book Ticket" />
+                <elementDefinition Id="062eb6ee-666c-4339-905d-78a6cf71c179" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cae85074-bac1-4e73-827d-ef8cd25eaa95" name="Make Refund" isLeaf="false">
+            <elementDefinition Id="c0c9a172-c1a6-45a8-ba12-b27621281f04" />
+            <flowNodeTargets>
+              <controlFlow Id="58f5a54d-c391-4754-a798-51e0a92f42a8" isLeaf="false">
+                <activityFinalNodeMoniker Id="35565e7e-b2b5-4e13-89f0-b410c5af1613" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6871046a-e8d8-4a74-a7bb-cdcbe9b03b08" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d7fcecb5-454a-4152-b0f2-990d1d082efb" name="Write Newsletter" isLeaf="false">
+            <elementDefinition Id="b08a9025-ba3e-405b-99c3-ff42fb5c9488" />
+            <flowNodeTargets>
+              <controlFlow Id="ad9dedd2-54b1-4787-866f-53aea4d110c9" isLeaf="false">
+                <opaqueActionMoniker Id="4e6ca2d8-5b9d-45ca-9302-122abc8129d8" LastKnownName="Send Newsletter" />
+                <elementDefinition Id="88978df4-5b2a-4cec-9dd2-a9998edf581a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4e6ca2d8-5b9d-45ca-9302-122abc8129d8" name="Send Newsletter" isLeaf="false">
+            <elementDefinition Id="718296cb-3ed8-45c2-bdc3-764b5d25d696" />
+          </opaqueAction>
+          <opaqueAction Id="33f71a61-8049-4fb2-b48e-51c9bc033d1a" name="Send Membership Reminders" isLeaf="false">
+            <elementDefinition Id="3fb8a350-0a48-4fbd-a067-ba6c28723a71" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c6c47fab-7836-4a45-99d1-a98d1dfd0836" name="ModelingProject1">
+    <elementDefinition Id="55cd6f86-5d04-46d2-beaf-473880b2ab31" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8b81e58c-7083-43b2-930b-93af3f3ebf0f">
+        <profileInstance Id="0cfc09fd-40f8-4997-884f-f236a3d67106" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="418906f4-186f-45c1-95d9-1e3beb7266ea">
+        <profileInstance Id="c30c21e6-8320-4568-a7c5-f8eb691552e9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

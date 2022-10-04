@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>"2d graphics acw"</title>
+    <script type="text/javascript" src="javascript/canvas.js"></script>
+    <script type="text/javascript" src="javascript/vector.js"></script>
+	<script type="text/javascript" src="javascript/extends.js"></script>
+	<script type="text/javascript" src="javascript/FaultTreeNode.js"></script>
+	<script type="text/javascript" src="javascript/FaultTreeGate.js"></script>
+	<script type="text/javascript" src="javascript/transferGate.js"></script>
+	<script type="text/javascript" src="javascript/AndGate.js"></script>
+	<script type="text/javascript" src="javascript/BasicEvent.js"></script>
+	<script type="text/javascript" src="javascript/OrGate.js"></script>
+	<script type="text/javascript" src="javascript/ExampleFaultTrees.js"></script>	
+	
+</head>
+<body>
+    <canvas id="canvas" width="1200" height="800">
+        Your browser does not support the canvas tag
+    </canvas>
+    <p>201305463 Jack Hoyle - 08240 Fault Tree ACW</p>
+    <h1>Instructions :</h1>
+    <p>Changing fault trees - use the left and right arrow keys to go back and forth between fault trees</p>
+    <img src="images/change1.png" height= "25%" width="25%" allign="left"/>
+    <img src="images/change2.png" height= "25%" width="25%" allign="left"/>   
+    <p>Panning - use the mouse to click and drag the fault trees so you can view different sections</p>
+    <p>Zooming - use the mouse scroll to zoom in and out of the current fault tree where the mouse is pointing</p>
+    <img src="images/zoom.png" height= "25%" width="25%" allign="left"/>
+    <p>Fit to canvas - to make the current fault tree fit to the current press enter</p>
+    <img src="images/fit1.png" height= "25%" width="25%" allign="left"/>
+    <img src="images/fit2.png" height= "25%" width="25%" allign="left"/>
+    <p>Change to Dynamic canvas - to change to canvas so it fits to the window you press the "F" key</p>
+    <img src="images/dynamic1.png" height= "25%" width="25%" allign="left"/>
+    <img src="images/dynamic2.png" height= "25%" width="25%" allign="left"/>
+    <h2>Description :</h2> 
+    <p>Changing fault trees - to change the fault trees when the arrow keys are pressed i incremented the tree index when the key is pressed.</p>
+    <p>Panning - to make the trees pan i used an event to detect whether the mouse had been clicked if so it triggered a boolean to say that the canvas was grabbed, then i have an event that triggers when the mouse is moved to check if the canvas has been grabbed, if so then i measure the distance the mouse has been moved and add it to the canvas position</p>
+    <p>Zooming - to make the canvas zoom i used an event that triggered when the mouse wheel has been scrolled which increase and decreases the mousedelta depending on if it has been scrolled in or out this in turn increases or decrease the global zoom variable</p>
+    <p>Fit to canvas - when you press the key it calls a method to figures out the ratios of canvas width by the whole tree width and the canvas height and tree height and if the height ratio was larger than the width ratio it would set the global zoom variable to the width ratio and centre the tree as well if the width ratio is larger than the height then it will do the same but using the height ratio</p>
+    <p>Change to dynamic canvas - when the key is pressed it first checks if it is already dynamic if it is it will set set the canvas size back to the set size if not then it will set the canvas size to the inside of the open window if the window is resized then it will trigger an event that checks if the dynamic canvas is active and if it is it will also set the canvas size to the inside of the newly sized window and change the minimap size along with it</p>
+</body>
+</html>

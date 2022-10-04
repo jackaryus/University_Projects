@@ -1,0 +1,23 @@
+UNIVERSITY GRADES
+YEAR 1 70.7
+08123 Computer Systems - 69
+08969 Games Development Studies (free elective) - 68
+08119 Information Technology and Professional Skills - 74
+08101 Programming 1 - 70
+08120 Programming 2 - 66
+08112 Software Engineering and Human Computer Interaction - 77
+
+YEAR 2 66.5
+08240 2D Computer Graphics and User Interface Design - 67
+08227 Advanced Programming - 60
+08226 Artificial Intelligence - 57
+08241 Networking and Games Architecture - 75
+08214 Simulation and 3D Graphics - 69
+08220 Systems Analysis, Design and Process - 71
+
+YEAR 3 68.2
+08343 Commercial Games Development Process - 72
+08341 Development Project - 64 (2x worth)
+08356 Games Programming and Advanced Graphics - 81
+08309 Mobile Devices and Applications - 64
+08336 Neural, Emergent and Agent Technology - 64

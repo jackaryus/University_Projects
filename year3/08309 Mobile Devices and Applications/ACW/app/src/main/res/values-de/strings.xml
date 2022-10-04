@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> Kachel-Matching-Spiel</string>
+    <string name="highscore">Highscore:</string>
+    <string name="puzzle">Wählen sie puzzle</string>
+    <string name="puzzle_select_msg">Wählen Sie Puzzle unten</string>
+    <string name="score">Ergebnis:</string>
+    <string name="win"> Wir gratulieren Ihnen zu gewinnen</string>
+    <string name="win_highscore"> Wir gratulieren Ihnen zu gewinnen und eine neue Highscores</string>
+</resources>

@@ -1,0 +1,241 @@
+﻿using DatabaseLibrary;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WynnesTours
+{
+    public partial class MainForm : Form
+    {
+        // Creating a new instance of WynneDatabase, in order to access the 
+        // methods within it, in a different class
+        WynneDatabase l = new WynneDatabase();
+        public MainForm()
+        {
+            InitializeComponent();
+
+            // Shows what tours and what coaches exists at the outset
+            listBoxTours.DataSource = l.GetTours(DateTime.Now.AddYears(-10), DateTime.Now.AddYears(9), false);
+            listBoxCoaches.DataSource = l.GetCoaches();
+
+        }
+
+        #region Tour
+
+        // All tour methods
+        private void buttonCreateTour_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.CreateTour(textBoxTourName.Text, richTextBoxTourDescription.Text, dateTimePickerTourDate.Value, int.Parse(textBoxCoachID.Text), double.Parse(textBoxBaseTicketPrice.Text));
+                MessageBox.Show("Tour successfully created!");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+
+        private void buttonEditTour_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.CreateTour(textBoxTourName.Text, richTextBoxTourDescription.Text, dateTimePickerTourDate.Value, int.Parse(textBoxCoachID.Text), double.Parse(textBoxBaseTicketPrice.Text));
+                MessageBox.Show("Tour successfully edited!");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+
+        private void buttonDeleteTour_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.DeleteTour(int.Parse(TourIDTB.Text));
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        #endregion
+
+        #region Customer
+
+        // All customer methods
+        private void buttonCreateCustomer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.AddCustomer(textBoxTitle.Text, textBoxForename.Text, textBoxSurname.Text, textBoxAddress.Text, textBoxEmail.Text, textBoxTelephoneNo.Text);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+
+        private void buttonEditCustomer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.ModifyCustomer(int.Parse(textBoxCustomerSearch.Text), textBoxTitle.Text, textBoxForename.Text, textBoxSurname.Text, textBoxAddress.Text, textBoxEmail.Text, textBoxTelephoneNo.Text);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+
+        private void buttonDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.DeleteCustomer(int.Parse(textBoxCustomerSearch.Text));
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.GetCustomerById(int.Parse(textBoxCustomerSearch.Text));
+                Customer A = l.GetCustomerById(int.Parse(textBoxCustomerSearch.Text));
+
+                textBoxTitle.Text = A.Title;
+                textBoxForename.Text = A.FirstName;
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        #endregion
+
+        #region Tickets
+
+        // All ticket methods
+        private void buttonTicketSearchTicketID_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Ticket m = l.GetTicketById(int.Parse(textBoxTicketSearch.Text));
+
+                reserveCustomerIDTB.Text = m.CustomerId.ToString();
+                dateTimePickerReservation.Value = m.ReservationExpiryDate;
+                payCustomerIDTB.Text = m.ID.ToString();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonTicketSearchTourID_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBoxTickets.DataSource = l.GetTicketsForTour(int.Parse(textBoxTicketSearch.Text));   
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonTicketSearchCustomerID_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBoxTickets.DataSource = l.GetTicketsByCustomerId(int.Parse(textBoxTicketSearch.Text));
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonBookTicket_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                l.BuyTicket(int.Parse(BuyTicketTourID.Text), int.Parse(bookCustomerIDTB.Text), double.Parse(PricePaidTB.Text));
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonReserveTicket_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.ReserveTicket(int.Parse(TicketTourID.Text), int.Parse(reserveCustomerIDTB.Text), dateTimePickerReservation.Value);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                l.PayForReservedTicket(int.Parse(payCustomerIDTB.Text), double.Parse(textBox2.Text));
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonBookTicket_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.BuyTicket(int.Parse(TourIDTB.Text), int.Parse(bookCustomerIDTB.Text), double.Parse(PricePaidTB.Text));
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        #endregion
+
+        #region Coaches
+
+        // All coach methods
+        private void buttonAddCoach_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.AddCoach(int.Parse(textBox4.Text), textBox5.Text);
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        private void buttonCoach_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                l.DeleteCoach(int.Parse(CoachIDTB.Text));
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
+        }
+        #endregion
+    }
+
+}

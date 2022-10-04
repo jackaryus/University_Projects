@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">carrelage jeu de correspondance</string>
+    <string name="highscore">Score élevé:</string>
+    <string name="puzzle">Sélectionnez casse-tête</string>
+    <string name="puzzle_select_msg">Sélectionnez ci-dessous de puzzle</string>
+    <string name="score"> But:</string>
+    <string name="win">Félicitations, vous gagnez</string>
+    <string name="win_highscore"> Félicitations, vous gagnez et un nouveau score élevé</string>
+</resources>
