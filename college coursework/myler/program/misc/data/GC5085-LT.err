@@ -1,0 +1,84 @@
+120220 11:06:05 [Note] Plugin 'FEDERATED' is disabled.
+120220 11:06:06 InnoDB: The InnoDB memory heap is disabled
+120220 11:06:06 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120220 11:06:06 InnoDB: Compressed tables use zlib 1.2.3
+120220 11:06:06 InnoDB: Initializing buffer pool, size = 128.0M
+120220 11:06:06 InnoDB: Completed initialization of buffer pool
+120220 11:06:06 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+120220 11:06:07  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+120220 11:06:10  InnoDB: Waiting for the background threads to start
+120220 11:06:11 InnoDB: 1.1.7 started; log sequence number 1595675
+120220 11:06:11 [Note] Recovering after a crash using mysql-bin
+120220 11:06:11 [Note] Starting crash recovery...
+120220 11:06:11 [Note] Crash recovery finished.
+120220 11:06:14 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120220 11:06:15 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120220 11:06:15 [Note] Event Scheduler: Loaded 0 events
+120220 11:06:15 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.5.13-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120220 11:06:59 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: Normal shutdown
+
+120220 11:06:59 [Note] Event Scheduler: Purging the queue. 0 events
+120220 11:07:00  InnoDB: Starting shutdown...
+120220 11:07:00  InnoDB: Shutdown completed; log sequence number 1595675
+120220 11:07:00 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: Shutdown complete
+
+120220 11:07:10 [Note] Plugin 'FEDERATED' is disabled.
+120220 11:07:10 InnoDB: The InnoDB memory heap is disabled
+120220 11:07:10 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+120220 11:07:10 InnoDB: Compressed tables use zlib 1.2.3
+120220 11:07:10 InnoDB: Initializing buffer pool, size = 128.0M
+120220 11:07:10 InnoDB: Completed initialization of buffer pool
+120220 11:07:10 InnoDB: highest supported file format is Barracuda.
+120220 11:07:12  InnoDB: Waiting for the background threads to start
+120220 11:07:13 InnoDB: 1.1.7 started; log sequence number 1595675
+120220 11:07:16 [ERROR] Missing system table mysql.proxies_priv; please run mysql_upgrade to create it
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+120220 11:07:16 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+120220 11:07:16 [Note] Event Scheduler: Loaded 0 events
+120220 11:07:16 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: ready for connections.
+Version: '5.5.13-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+120220 11:12:06 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: Normal shutdown
+
+120220 11:12:06 [Note] Event Scheduler: Purging the queue. 0 events
+120220 11:12:07  InnoDB: Starting shutdown...
+120220 11:12:07  InnoDB: Shutdown completed; log sequence number 1595675
+120220 11:12:07 [Note] R:\COMPUT~1\COMP3~1\05DATA~1\EASYPH~1.1\MySql\bin\mysqld.exe: Shutdown complete
+

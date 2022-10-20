@@ -1,0 +1,35 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 238
+  HorizontalOffset = 260
+  VerticalOffset = 154
+  Width = 330
+  object SQLUsers: TSQLQuery
+    FieldDefs = <>
+    Database = MylerConnection
+    Transaction = MylerTransaction
+    Params = <>
+    left = 72
+  end
+  object MylerTransaction: TSQLTransaction
+    Active = False
+    Action = caNone
+    Database = MylerConnection
+    left = 149
+  end
+  object MylerConnection: TODBCConnection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'mylerDSN'
+    KeepConnection = True
+    Params.Strings = (
+      'SERVER=127.0.0.1'
+      'PORT=3306'
+      'DATABASE=myler'
+    )
+    Transaction = MylerTransaction
+    UserName = 'root'
+    LogEvents = []
+    Driver = 'MySQL ODBC 5.1 Driver'
+  end
+end

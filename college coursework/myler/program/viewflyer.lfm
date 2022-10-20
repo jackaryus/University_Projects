@@ -1,0 +1,69 @@
+object frmviewflyer: Tfrmviewflyer
+  Left = 287
+  Height = 746
+  Top = 134
+  Width = 914
+  Caption = 'View Flyer'
+  ClientHeight = 746
+  ClientWidth = 914
+  OnShow = FormCreate
+  LCLVersion = '0.9.30'
+  object Panel1: TPanel
+    Left = 8
+    Height = 611
+    Top = 8
+    Width = 863
+    ClientHeight = 611
+    ClientWidth = 863
+    ParentColor = False
+    TabOrder = 0
+    object Image3: TImage
+      Left = 549
+      Height = 145
+      Top = 133
+      Width = 152
+      Proportional = True
+      Stretch = True
+    end
+    object Image4: TImage
+      Left = 549
+      Height = 200
+      Top = 377
+      Width = 275
+      Proportional = True
+      Stretch = True
+    end
+    object Memo1: TMemo
+      Left = 32
+      Height = 534
+      Top = 32
+      Width = 486
+      Color = clNone
+      Lines.Strings = (
+        'Insert Description Here...'
+      )
+      TabOrder = 0
+    end
+    object Memo2: TMemo
+      Left = 730
+      Height = 323
+      Top = 43
+      Width = 94
+      Color = clNone
+      Lines.Strings = (
+        'Insert Title '
+        'Here...'
+      )
+      TabOrder = 1
+    end
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 40
+    Top = 624
+    Width = 144
+    Caption = 'Back'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
